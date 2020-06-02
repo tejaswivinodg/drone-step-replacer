@@ -1,0 +1,13 @@
+---
+kind: pipeline
+type: docker
+name: pull-request
+trigger:
+  event: pull_request
+---
+kind: pipeline
+type: docker
+name: push
+trigger:
+  event: push
+...
