@@ -1,5 +1,10 @@
-# Welcome!
+# Drone-Step-Replacer
 
-Welcome to your brand new repo!
+This binary will replace `deploy_to_kubernetes_qa_manual` step's conditional to enable Git branch deployment workflow.
+More info about Git branch deployment workflow is in [RFC](https://go/rfc/qa-deploy-strategy) and [documentation](https://wiki.squarespace.net/pages/viewpage.action?pageId=123836169).
 
-In order to get youself started, you can go ahead and open a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) or use [Bootstrapper](http://bootstrapper.squarespace.net/) to setup a basic project.
+## Usage:
+
+1. Use `replacer make-changes <drone_file_path>` to make changes in drone file to enable Git branch deployment.
+2. Use `replacer verify-changes <drone_file_path>` to show changes made in drone file.
+3. Use `replacer create-pr` to create PR with Drone config changes.
